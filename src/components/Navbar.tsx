@@ -48,6 +48,7 @@ const Nav = styled.nav`
         display: flex;
         list-style: none;
         gap: 1rem;
+        
         li { 
             a { 
                 text-decoration: none;
@@ -73,12 +74,12 @@ const Nav = styled.nav`
         padding: .5rem 1rem;
         cursor: pointer;
         border-radius: 1rem;
-        border: nnone;
+        border: none;
         color: #FFFFFF;
         background-color: #48cae4;
         text-transform: uppercase;
         font-size: 1.1rem;
-        letter-spacing: 1.1rem;
+        letter-spacing: .25rem;
         transition: .3s ease-in-out;
 
         &:hover {
