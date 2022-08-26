@@ -12,3 +12,12 @@ body {
     margin: 1rem 2rem;
     font-family: sans-serif;
 }
+
+::webkit-scrollbar {
+    width: .6rem;
+    background-color: #14213d;
+}
+
+::webkit-scrollbar-thumb {
+    background-color: #4539e6;
+}
