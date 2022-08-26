@@ -164,4 +164,26 @@ const Section = styled.section`
             }
         }
     }
+
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        .packages {
+            ul {
+                li {
+                    padding: 0 .5rem;
+                    font-size: 2vh;
+                    padding-bottom: 1rem;
+                }
+
+                .active {
+                    border-bottom-width: .3rem;
+                }
+            }
+        }
+
+        .destinations {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+
 `;
