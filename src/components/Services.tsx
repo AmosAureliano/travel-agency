@@ -54,4 +54,12 @@ const Section = styled.section`
             box-shadow: rgba(0, 0, 0, .35) 0px 0px 15px;
         }
     }
+
+    @media screen and (min-width: 280px) and (max-width: 780px) {
+        grid-template-columns: repeat(autofill, minmax(250px, 1fr));
+    }
+
+    @media screen and (min-width: 720px) and (max-width: 780px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 `;

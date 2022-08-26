@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export default function Testimonial() {
     return(
-        <Section>
+        <Section id="testimonials">
             <div className="title">
                 <h2>Quem Viajou Conosco Sabe!</h2>
             </div>               
@@ -81,6 +81,22 @@ const Section = styled.section`
                     span {
                         font-size: .9rem;
                     }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 280px) and (max-width: 768px) {
+        .testimonials {
+            flex-direction: column;
+            margin: 0;
+
+            .testimonial {
+                justify-content: center;
+
+                .info {
+                    flex-direction: column;
+                    justify-content: center;
                 }
             }
         }

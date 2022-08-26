@@ -139,16 +139,45 @@ const Section = styled.section`
 
     }
 
+    @media screen and (min-width: 280px) and (max-width: 980px) {
+        height: 25rem;
 
-    @media(max-width: 768px) {
-        .search {
-            flex-direction: column;
-            position: absolute;
-            top: 10vh;
-            align-self: center;
-            z-index: 3;
-            background-color: #FFFFFFce;
-            width: 100%;
+        .background {
+            img {
+                height: 100%;
+            }
+        }
+
+        .content {
+            .title {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .8rem;
+                    padding: 1vw;
+                }
+            }
+
+            .search {
+                flex-direction: column;
+                padding: .8rem;
+                gap: .8rem;
+
+                .container {
+                    padding: 0 .8rem;
+                    
+                    input[type="date"] {
+                        padding-left: 1rem 
+                    }
+                }
+
+                button {
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+            }
         }
     }
 `
