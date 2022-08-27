@@ -132,7 +132,7 @@ const ResponsiveNav = styled.nav`
     height: 30vh;
     align-items: center;
     transition: .3s ease-in-out;
-    top: ${({ state }) => (state ? "50px" : "-400px")};
+    top: "50px";
 
     ul {
         list-style-type: none;
