@@ -12,14 +12,13 @@ export default function ScrollToTop() {
     })
 
     return(
-        <ToTop>
+        <ToTop style={ scrollState ? { display: "Block"} : { display: "none"}}>
             <p>Logo</p>
         </ToTop>
     )
 }
 
 const ToTop = styled.div`
-    display: ${({scrollState}) => (scrollState ? "block" : "none")};
     position: fixed;
     bottom: 1rem;
     right: 2rem;
