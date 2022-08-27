@@ -28,7 +28,7 @@ export default function Navbar() {
                 </ul>
                 <button>Conectar</button>
             </Nav>
-            <ResponsiveNav state={navbarState}>
+            <ResponsiveNav>
                 <ul>
                     <li><a href="#home" onClick={() => setNavbarState(false)}>Home</a></li>
                     <li><a href="#services" onClick={() => setNavbarState(false)}>Serviços</a></li>
@@ -132,7 +132,7 @@ const ResponsiveNav = styled.nav`
     height: 30vh;
     align-items: center;
     transition: .3s ease-in-out;
-    top: ${({ state }) => (state ? "50px" : "-400px")};
+    top: "50px";
 
     ul {
         list-style-type: none;
